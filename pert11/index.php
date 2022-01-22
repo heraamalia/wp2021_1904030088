@@ -101,14 +101,14 @@ if (isset($_POST['cari'])) {
           </tr>
         </thead>
 
-        <?php if (empty($camaba)) : ?>
+        <?php if(empty($camaba)): ?>
           <tr>
             <td colspan="4" class="alert alert-danger text-center" role="alert">
               <p><b>
-                  <p> Data Mahasiswa Tidak Ditemukan</p>
+              <p> Data Mahasiswa Tidak Ditemukan</p> 
             </td>
           </tr>
-        <?php endif; ?>
+          <?php endif; ?>
         <tbody>
           <?php $no = 1; ?>
           <?php foreach ($camaba as $cmb) : ?>
